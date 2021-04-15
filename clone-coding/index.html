@@ -4,40 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>맥도날드 홈페이지</title>
+    <title>왓챠</title>
     <!-- 파비콘 설정 -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 각 브라우저 화면에 적용되는 스타일 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 폰트 -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800&display=swap" rel="stylesheet">
-    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- 헤더 스크롤 기능 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="./js/main.js"></script>
 </head>
  
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/logo.png" height="130" alt="로고이미지" /> 
-        </div>
-        <div class="mc_menu">  
-             <li class="menu"><a href="">Menu</a></li>
-             <li class="store"><a href="">Store</a></li>
-             <li class="new"><a href="">What's New</a></li>
-             <li class="story"><a href="">Story</a></li>
-        </div>     
-        <div class="mc_button">     
-             <button class="button_l">RECRUIT</button>
-             <button class="button_r">ENG</button>
-        </div> 
-        <div>
-            <!--검색창 아이콘-->
-            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTA4Ljg3NSw0OTMuNzkyTDM1My4wODksMzM4LjAwNWMzMi4zNTgtMzUuOTI3LDUyLjI0NS04My4yOTYsNTIuMjQ1LTEzNS4zMzlDNDA1LjMzMyw5MC45MTcsMzE0LjQxNywwLDIwMi42NjcsMA0KCQkJUzAsOTAuOTE3LDAsMjAyLjY2N3M5MC45MTcsMjAyLjY2NywyMDIuNjY3LDIwMi42NjdjNTIuMDQzLDAsOTkuNDExLTE5Ljg4NywxMzUuMzM5LTUyLjI0NWwxNTUuNzg2LDE1NS43ODYNCgkJCWMyLjA4MywyLjA4Myw0LjgxMywzLjEyNSw3LjU0MiwzLjEyNWMyLjcyOSwwLDUuNDU4LTEuMDQyLDcuNTQyLTMuMTI1QzUxMy4wNDIsNTA0LjcwOCw1MTMuMDQyLDQ5Ny45NTgsNTA4Ljg3NSw0OTMuNzkyeg0KCQkJIE0yMDIuNjY3LDM4NGMtOTkuOTc5LDAtMTgxLjMzMy04MS4zNDQtMTgxLjMzMy0xODEuMzMzUzEwMi42ODgsMjEuMzMzLDIwMi42NjcsMjEuMzMzUzM4NCwxMDIuNjc3LDM4NCwyMDIuNjY3DQoJCQlTMzAyLjY0NiwzODQsMjAyLjY2NywzODR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" height="40" />
-        </div> 
-    </nav>
+    <nav>
+       <div class="navbar">
+            <a href="https://watcha.com/home"><img src="./images/logo.png" height="46" alt="로고이미지"></a> 
+             <div class="menu_left">  
+             <li class="home"><a href="">홈</a></li>
+             <li class="explore"><a href="">탐색하기</a></li>
+             <li class="evaluate"><a href="">평가하기</a></li>
+            </div>     
+            <div class="menu_right">
+              <div class="search_box">   
+               <span class="search_button">
+                 <img src="./images/search_button.png" height="14" /></span>     
+                   <li class="search">검색</li>
+              </div>
+             <li class="want_to_watch">보고싶어요</li>
+            <div class="profile_box"> 
+             <img class="profile_image" src="https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_300,w_300/profile2_uxl1zt.jpg" alt="프로필사진">
+              <li class="profile">이용자1</li>
+               <span class="down_arrow">
+                 <img src="./images/down-arrow.png" height="9"/>
+               </span>
+              </div>
+           </div> 
+       </div>   
+    </nav> 
+
+
+<main>
+  <div class="slider">
+    <div class= "slide">
+        <h1 class="slide_title">4월 2주 신작 </h1>
+        <h2 class="slide_title_down">
+          <p style="height:30px;">타오르는 여인의 초상, 라빠르망,</p>
+          <p>어디갔어 버나뎃 등</p>
+     </h2>
+     <input type="button" value="목록 보기" class="button_list"/>
+  </div> 
+</div>   
+  
+</main>
+
+ <footer></footer>
+    
 </body>
 
 </html>
