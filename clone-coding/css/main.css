@@ -34,6 +34,7 @@ a {
     
 }
 
+
 .menu_right {
     display: flex;
     align-items: center;
@@ -47,12 +48,12 @@ a {
     font-family: noto sans kr;
     font-size: 14px;
     flex-shrink: 0;
-        
 }
 
 .menu_left li {
     padding: 0 12px;
 }
+
 
 .home {
     font-weight: bold;
@@ -95,6 +96,7 @@ padding-right: 4px;
 main {
     height: 100vh;
     position: relative;
+    flex-direction: row;
 }
 
 main .wrapper {
@@ -111,8 +113,7 @@ main .wrapper #slider {
 }
 
 main .wrapper #slider .slide {
-    height: 100%;
-    background-size: 100%
+    overflow: hidden;
 }
 
 main .wrapper #slider .slide1 {
@@ -127,8 +128,8 @@ main .wrapper #slider .slide1 {
         background-size: cover;
       }
 
- main .wrapper #slider .slide_title1 {
-        padding-top: 260px;
+ main .wrapper #slider .slide_title {
+        padding-top: 240px;
         padding-left: 50px;
         font-family: noto sans kr;
         font-weight: 800;
@@ -137,7 +138,7 @@ main .wrapper #slider .slide1 {
         letter-spacing: -3px;
     }
 
- main .wrapper #slider .slide_title_down1 {
+ main .wrapper #slider .slide_title_down {
         padding-top: 25px;
         padding-left: 50px;
         font-family: noto sans kr;
@@ -157,7 +158,7 @@ input.button_1{
         height: 50px;
         width: 135px;
         margin-left: 50px;
-        margin-top: 45px;
+        margin-top: 35px;
         font-family: noto sans kr;
         font-size: 19px;
         text-align: right;
@@ -174,7 +175,7 @@ input.button_1:hover{
         height: 50px;
         width: 135px;
         margin-left: 50px;
-        margin-top: 45px;
+        margin-top: 35px;
         font-family: noto sans kr;
         font-size: 19px;
         text-align: right;
@@ -184,7 +185,15 @@ input.button_1:hover{
 
 
 main .wrapper #slider .slide2 {
-    background-image: url(../images/slides/slide02.jpeg);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        to left,
+       rgba(20, 20, 20, 0.1) 50%,
+       rgba(20, 20, 20, 0.3) 75%,
+       rgba(20, 20, 20, 0.75) 100%
+    ), url("../images/mudo.jpg");
+    background-size: cover;    
 }
 
 main .wrapper #slider .slide3 {
@@ -206,7 +215,7 @@ main .wrapper #slider .slide6 {
 
 main .wrapper #slider .slide__content {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,19 +232,22 @@ main .wrapper #slider .slide__content span {
 main .wrapper #slider .material-icons {
     justify-content: center;
     position: absolute;
-    top: 45%;
+    top: 28%;
     margin-top: 30px;
+    
 }
 
 main .wrapper #slider .arrow--left {
-    left: 20px;
+    left: 0;
+    padding: 100px 15px;
+   
    
 }
 
 main .wrapper #slider .arrow--right {
-    right: 20px;
+    right: 0px;
+    padding: 100px 15px;
 }
-
 /* SLIDER DOTS */
 
 main .wrapper #slider .dots {

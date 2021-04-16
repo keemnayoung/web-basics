@@ -103,7 +103,7 @@ dot1.addEventListener("click", function(){
   reset()
   current = 0
   sliderImages[current].style.display = 'block';
-  dots[current].style.background = '##ffffff'
+  dots[current].style.background = '#ffffff'
 })
 
 // 두번째 동그라미 클릭할 시 작동하는 익명의 함수
@@ -111,7 +111,7 @@ dot2.addEventListener("click", function(){
   reset()
   current = 1
   sliderImages[current].style.display = 'block';
-  dots[current].style.background = '##ffffff'
+  dots[current].style.background = '#ffffff'
 })
 
 // 세번째 동그라미 클릭할 시 작동하는 익명의 함수
@@ -119,7 +119,7 @@ dot3.addEventListener("click", function(){
   reset()
   current = 2
   sliderImages[current].style.display = 'block';
-  dots[current].style.background = '##ffffff'
+  dots[current].style.background = '#ffffff'
 })
 
 // 네번째 동그라미 클릭할 시 작동하는 익명의 함수
@@ -127,5 +127,21 @@ dot4.addEventListener("click", function(){
   reset()
   current = 3
   sliderImages[current].style.display = 'block';
-  dots[current].style.background = '##ffffff'
+  dots[current].style.background = '#ffffff'
+})
+
+// 다섯번째 동그라미 클릭할 시 작동하는 익명의 함수
+dot5.addEventListener("click", function(){
+  reset()
+  current = 4
+  sliderImages[current].style.display = 'block';
+  dots[current].style.background = '#ffffff'
+})
+
+// 여섯번째 동그라미 클릭할 시 작동하는 익명의 함수
+dot6.addEventListener("click", function(){
+  reset()
+  current = 5
+  sliderImages[current].style.display = 'block';
+  dots[current].style.background = '#ffffff'
 })
