@@ -145,3 +145,15 @@ dot6.addEventListener("click", function(){
   sliderImages[current].style.display = 'block';
   dots[current].style.background = '#ffffff'
 })
+
+// 슬라이드
+
+$("#right").click(function() {
+  var currentLeft = parseInt($('.items').css('left'));
+  $('.items').css('left', (currentLeft - 800) + 'px');
+})
+
+$('#left').click(function() {
+  var currentLeft = parseInt($('.items').css('left'));
+  $('.items').css('left', (currentLeft + 800) + 'px');
+})
