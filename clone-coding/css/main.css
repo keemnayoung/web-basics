@@ -1,13 +1,14 @@
+
 body {
     margin: 0;
+    height: 1000px;
     padding: 0;
-    height: 1500px;
     background-color: rgb(0, 0, 0);
 
 }
 
 
-/* HEADER */
+/* 헤더 */
 .navbar {
     position: fixed;
     width: 100%;
@@ -22,7 +23,7 @@ body {
     color:#eeeeee;
 }
 
-
+/* 헤더의 왼쪽 메뉴 */
 .menu_left{
     display: flex;
     align-items: center;
@@ -34,7 +35,7 @@ body {
     
 }
 
-
+/* 헤더의 오른쪽 메뉴 */
 .menu_right {
     display: flex;
     align-items: center;
@@ -44,33 +45,37 @@ body {
     
 }
 
-
+/* 왼쪽 메뉴 간격 조절 */
 .menu_left li {
     padding: 0 14px;
 }
-
+/* 오른쪽 메뉴 간격 조절 */
 .menu_right li {
     padding: 0 3px;
 }
 
+/* 왼쪽 메뉴의 '홈'메뉴 폰트 속성 */
 a {
     font-weight: bold;
     text-decoration: none;
     color:#eeeeee;
 }
 
-
+/* 검색 메뉴 */
 .search_box{
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
+
+/* 검색 아이콘 */
 .search_button {
     position: relative;
     padding-top: 4px;
     padding-right: 5px;
 }
 
+/* 프로필 */
 .profile_box {
     display: flex;
     align-items: center;
@@ -78,6 +83,7 @@ a {
     
 }
 
+/* 프로필 사진 */
 .profile_image {
 border-radius: 50%;
 height: 25px;
@@ -86,26 +92,25 @@ padding-top: 3px;
 padding-right: 4px;
 }
 
+/* 프로필 이름 위치 조절 */
 .profile {
     padding-right: 6px;
 }
 
 
 /* 메인 */
-
-
 main {
     height: 100vh;
     position: relative;
     flex-direction: row;
 }
 
+/* MAIN SLIDER */
+
 main .wrapper {
     justify-content: center;
     top: calc((40vh - 120px)/2 + 120px);
 }
-
-/* MAIN SLIDER */
 
 main .wrapper #slider {
     width: 100%;
@@ -114,9 +119,11 @@ main .wrapper #slider {
     overflow: hidden;
 }
 
+/* 첫 번째 슬라이드 */
 main .wrapper #slider .slide1 {
     width: 100%;
     height: 100vh;
+    /* 슬라이드에 명암 추가 */
     background: linear-gradient(
      to left,
     rgba(20, 20, 20, 0.1) 50%,
@@ -126,6 +133,19 @@ main .wrapper #slider .slide1 {
         background-size: cover;
       }
 
+      /* 슬라이드 전체적인 텍스트 위치 */
+    main .wrapper #slider .slide_ {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        color: #ffffff;
+    }
+
+      /* 슬라이드의 대표 제목 속성 */
  main .wrapper #slider .slide_title {
         padding-top: 240px;
         padding-left: 50px;
@@ -135,7 +155,7 @@ main .wrapper #slider .slide1 {
         color: white;
         letter-spacing: -3px;
     }
-
+ /* 슬라이드의 대표 제목 아래 있는 텍스트 속성 */
  main .wrapper #slider .slide_title_down {
         padding-top: 25px;
         padding-left: 50px;
@@ -144,6 +164,9 @@ main .wrapper #slider .slide1 {
         color: white;
     }
     
+
+
+    /* 첫 번째,두 번째,네 번째,다섯 번째 슬라이드의 '목록보기' 버튼 */
 input.button_1{
         background-image: url(/images/list.png);
         background-repeat: no-repeat;
@@ -161,8 +184,9 @@ input.button_1{
         font-size: 19px;
         text-align: right;
         color: white;
-    }
     
+    }
+    /* '목록보기' 버튼 호버시 */
 input.button_1:hover{
         background-image: url(/images/list_black.png);
         background-repeat: no-repeat;
@@ -178,13 +202,13 @@ input.button_1:hover{
         font-size: 19px;
         text-align: right;
         color: black;
-    
-    }
+  }
 
-
+/* 두 번째 슬라이드 */
 main .wrapper #slider .slide2 {
     width: 100%;
     height: 100vh;
+    /* 슬라이드에 명암 추가 */
     background: linear-gradient(
         to left,
        rgba(20, 20, 20, 0.1) 50%,
@@ -194,39 +218,198 @@ main .wrapper #slider .slide2 {
     background-size: cover;    
 }
 
+/* 세 번째 슬라이드 */
 main .wrapper #slider .slide3 {
-    background-image: url(../images/slides/slide03.jpeg);
+    width: 100%;
+    height: 100vh;
+    /* 슬라이드에 명암 추가 */
+    background: linear-gradient(
+        to left,
+       rgba(20, 20, 20, 0.1) 50%,
+       rgba(20, 20, 20, 0.3) 75%,
+       rgba(20, 20, 20, 0.75) 100%
+    ), url("../images/slide3.jpg");
+    background-size: cover;   
 }
 
+/* 세 번째 슬라이드 제목 이미지 위치 조절 */
+.slide_title3 {
+    padding: 210px 0px 0px 50px;
+}
+
+/* 세 번째,여섯 번째 슬라이드의 '재생' 버튼 속성 */
+input.button_2{
+    background-image: url(/images/play_w.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 30px;
+    background-color: #ffffff13;
+    padding: 10px 15px 15px 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: white;
+}
+
+/* '재생' 버튼 호버시 */
+input.button_2:hover{
+    background-image: url(/images/play_b.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 30px;
+    background-color: white;
+    padding: 10px 15px 15px 15px;
+    height: 50px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: black;
+
+}
+ 
+/* 세 번째,여섯 번째 슬라이드의 '보고싶어요' 버튼 속성 */
+input.button_3{
+    background-image: url(/images/plus_w.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 20px;
+    background-color: #ffffff10;
+    padding: 10px 15px 15px 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: white;
+}
+
+/* '보고싶어요' 버튼 호버시 */
+input.button_3:hover{
+    background-image: url(/images/plus_b.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 20px;
+    background-color: white;
+    padding: 10px 15px 15px 15px;
+    height: 50px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: black;
+
+}
+
+/* 세 번째,여섯 번째 슬라이드의 '자세히 보기' 버튼 속성 */
+input.button_4{
+    background-image: url(/images/info_w.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 24px;
+    background-color: #ffffff0c;
+    padding: 10px 15px 15px 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: white;
+}
+
+/* '자세히 보기  버튼 호버시 */
+input.button_4:hover{
+    background-image: url(/images/info_b.png);
+    background-repeat: no-repeat;
+    background-position: 13px;
+    background-size: 24px;
+    background-color: white;
+    padding: 10px 15px 15px 15px;
+    height: 50px;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: 35px;
+    font-family: noto sans kr;
+    font-size: 19px;
+    text-align: right;
+    color: black;
+
+}
+
+/* 네 번째 슬라이드 */
 main .wrapper #slider .slide4 {
-    background-image: url(../images/slides/slide04.jpeg);
-}
+    width: 100%;
+    height: 100vh;
+    /* 슬라이드에 명암 추가 */
+    background: linear-gradient(
+            to left,
+     rgba(20, 20, 20, 0.1) 50%,
+     rgba(20, 20, 20, 0.3) 75%,
+     rgba(20, 20, 20, 0.75) 100%
+      ), url("../images/slide4.jpg");
+     background-size: cover;   
+    }
+    
 
+/* 네 번째 슬라이드 */
 main .wrapper #slider .slide5 {
-    background-image: url(../images/slides/slide05.jpeg);
+    width: 100%;
+    height: 100vh;
+    /* 슬라이드에 명암 추가 */
+    background: linear-gradient(
+            to left,
+     rgba(20, 20, 20, 0.1) 50%,
+     rgba(20, 20, 20, 0.3) 75%,
+     rgba(20, 20, 20, 0.75) 100%
+      ), url("../images/slide5.jpg");
+     background-size: cover;   
     
 }
 
-main .wrapper #slider .slide6 {
-    background-image: url(../images/slides/slide06.jpeg);
+/* 다섯 번째 슬라이드 제목 위치 */
+.slide_title5 {
+    padding: 180px 0px 0px 50px;
 }
 
-main .wrapper #slider .slide__content {
+/* 여섯 번째 슬라이드 */
+main .wrapper #slider .slide6 {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* 슬라이드에 명암 추가 */
+    background: linear-gradient(
+            to left,
+     rgba(20, 20, 20, 0.1) 50%,
+     rgba(20, 20, 20, 0.3) 75%,
+     rgba(20, 20, 20, 0.75) 100%
+      ), url("../images/slide6 (2).jpg");
+     background-size: cover; 
 }
 
-main .wrapper #slider .slide__content span {
-    font-size: 80px;
-    color: #F6F5F0;
+/* 여섯 번째 슬라이드 제목 위치 */
+.slide_title6 {
+    padding: 140px 0px 0px 50px;
 }
+
 
 /* SLIDER ARROW */
-
 main .wrapper #slider .material-icons {
     justify-content: center;
     position: absolute;
@@ -235,6 +418,7 @@ main .wrapper #slider .material-icons {
     
 }
 
+/* 왼쪽 화살표 아이콘 */
 main .wrapper #slider .arrow--left {
     left: 0;
     padding: 100px 15px;
@@ -243,21 +427,24 @@ main .wrapper #slider .arrow--left {
    
 }
 
+/* 오른쪽 화살표 아이콘 */
 main .wrapper #slider .arrow--right {
     right: 0px;
     padding: 100px 15px;
     opacity: 0.5;
 }
 
+/* 왼쪽 화살표 아이콘 호버시 */
 main .wrapper #slider .arrow--left:hover {
     opacity: 1;
 }
 
+/* 오른쪽 화살표 아이콘 호버시 */
 main .wrapper #slider .arrow--right:hover {
     opacity: 1;
 }
 /* SLIDER DOTS */
-
+/* 슬라이드 동그라미 위치 */
 main .wrapper #slider .dots {
     position: absolute;
     bottom: 0;
@@ -269,6 +456,7 @@ main .wrapper #slider .dots {
     justify-content: flex-end;
 }
 
+/* 슬라이드 동그라미 속성 */
 main .wrapper #slider .dots .dot {
     width: 12px;
     height: 12px;
@@ -279,12 +467,13 @@ main .wrapper #slider .dots .dot {
     
 }
 
+/* 슬라이드 첫 번째 동그라미 색상 */
 main .wrapper #slider .dots .dot1 {
     background: #ffffff;
 }
 
 /* section */
-
+/* 첫 번째 컨테이너 대표 제목 속성 */
 .container_title {
     position: relative;
     bottom: 120px;
@@ -297,6 +486,7 @@ main .wrapper #slider .dots .dot1 {
     color: white;
 }
 
+/* 첫 번째 컨테이너의 '모두보기' 속성  */
 .watching_all {
     position: relative;
     bottom: 165px;
@@ -309,19 +499,21 @@ main .wrapper #slider .dots .dot1 {
     cursor: pointer;
 }
 
+/* 첫 번째 컨테이너의 '모두보기'호버시 색상 변경 */
 .watching_all:hover {
     color: white;
     opacity: 1;
 }
 
+/* 메인 슬라이드와 첫 번째 컨테이너의 자연스러운 연결을 위한 그라데이션 */
 .gradation {
     position: relative;
     bottom: 165px;
-    background: linear-gradient(to top, #00000000, #000000 40%, transparent);
+    background: linear-gradient(to top, #00000000, #000000 50%, transparent);
     height: 200px;
 }
 
-
+/* 영화들을 담은 박스의 위치 */
 .box {
     position: relative;
     bottom: 350px;
@@ -329,19 +521,19 @@ main .wrapper #slider .dots .dot1 {
     display: grid;
     grid-column-gap: 40px;
     grid-template-columns: repeat(6, minmax(100px, 1fr));
-    }
-  
-  .box a {
-    transition: transform .3s; 
-  }
-  
+}
+
+  /* 컨테이너에 담긴 영화 썸네일 호버시 */
   .box a:hover {
     transition: transform .3s;
     -ms-transform: scale(1.4);
     -webkit-transform: scale(1.4);  
     transform: scale(1.4);
+
+
   }
   
+  /* 첫 번째 컨테이너에 담긴 영화 제목 */
   .title_text {
     position: absolute;
     display: flex;
@@ -351,6 +543,7 @@ main .wrapper #slider .dots .dot1 {
     padding-left: 40px;
 }
 
+/* 첫 번째 컨테이너에 담긴 영화 제목들 간격 조절 */
 .title_text>div {
 position: relative;
 top: 150px;
@@ -358,6 +551,7 @@ padding-right: 196px;
 flex-shrink: 0;
 }
 
+/* 두 번째~여섯 번째 컨테이너의 대표 제목 속성 */
 .container_title_next {
     position: relative;
     bottom: 320px;
@@ -370,6 +564,7 @@ flex-shrink: 0;
     color: white;
 }
 
+/* 두 번째~여섯 번째 컨테이너의 '모두보기' 속성 */
 .watching_all_next {
     position: relative;
     bottom: 365px;
@@ -382,10 +577,13 @@ flex-shrink: 0;
     cursor: pointer;
 }
 
+/* 두 번째~여섯 번째 컨테이너의 '모두보기' 호버시 */
 .watching_all_next:hover {
     color: white;
     opacity: 1;
 }
+
+/* 두 번째~여섯 번째 컨테이너의 영화 제목 속성 */
 .title_text_next{
     position: absolute;
     display: flex;
@@ -395,6 +593,7 @@ flex-shrink: 0;
     padding-left: 40px;
 }
 
+/* 두 번째~여섯 번째 컨테이너에 담긴 영화 제목들 간격 조절 */
 .title_text_next>div {
     position: relative;
     display: inline-block;
@@ -402,6 +601,7 @@ flex-shrink: 0;
     flex-shrink: 0;
     }
 
+/* 영화 제목들의 전체적인 간격 조절 후, 벗어나는 위치 다시 디테일하게 조절 */
 .movie_title_1 {
     padding-left: 210px;
 }
@@ -458,7 +658,6 @@ flex-shrink: 0;
     padding-left: 185px;
 }
 
-
 .movie_title_15 {
     padding-left: 200px;
 }
@@ -483,3 +682,253 @@ flex-shrink: 0;
     padding-left: 170px;
 }
 
+.movie_title_21 {
+    padding-left: 200px;
+}
+
+.movie_title_22 {
+    padding-left: 150px;
+}
+
+.movie_title_23 {
+    padding-left: 215px;
+}
+
+.movie_title_24 {
+    padding-left: 200px;
+}
+
+.movie_title_25 {
+    padding-left: 160px;
+}
+
+
+/* 푸터  */
+
+footer {
+    position: absolute;
+    width: 100%; 
+    margin-bottom: 0;
+    bottom: -1750px;
+    padding-left: 40px;
+    
+}
+
+/*  세 단락 중 첫 번째 단락  */
+.paragraph1 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #b4b4b4;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing:  -0.8;
+    height: 0px;
+}
+
+/* 첫 번째 단락에서 각각 문장 나눠줌. (마지막 문장 제외) */
+.paragraph1>li:not(.paragraph1_line5):after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1.5px;
+    height: 11px;
+    margin: 1px 5px 0px 3px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 첫 번째 단락의 두번째 문장 폰트 진하게 */
+.paragraph1_line2 {
+    font-weight: 800;
+    color: white;
+}
+
+/* 두 번째 단락의 첫 번째 줄 */
+.paragraph2_line1 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #b4b4b4;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing:  -0.8;
+    height: 0px;
+    padding-top: 45px;
+}
+
+/* 두 번째 단락의 두 번째 줄 */
+.paragraph2_line2 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #b4b4b4;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing:  -0.8;
+    height: 0px;
+    padding: 20px 0px;
+}
+
+/* 두 번째 단락의 세 번째 줄 */
+.paragraph2_line3 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #b4b4b4;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.8;
+    height: 0px;
+    
+}
+
+/* 두 번째 단락의 첫 번째 줄의 문장 나눠줌 */
+.paragraph2_line1_1:after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1.5px;
+    height: 11px;
+    margin: 1px 10px 0px 5px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 두 번째 단락의 두 번째 줄의 문장 나눠줌 */
+.paragraph2_line2_1:after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1.5px;
+    height: 11px;
+    margin: 1px 10px 0px 57px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 두 번째 단락의 세 번째 줄의 문장 나눠줌 */
+.paragraph2_line3_1:after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1.5px;
+    height: 11px;
+    margin: 1px 10px 0px 34px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 세 번째 단락의 첫 번째 줄 */
+.paragraph3_line1 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #616161;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.8;
+    height: 0px;
+    padding-top: 60px;
+    
+}
+
+/* 세 번째 단락의 첫 번째 줄의 문장들 나눠줌. (마지막 문장 제외) */
+.paragraph3_line1>li:not(.paragraph3_line1_3):after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1px;
+    height: 11px;
+    margin: 1px 5px 0px 5px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 세 번째 단락의 두 번째 줄 */
+.paragraph3_line2 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #616161;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.8;
+    height: 0px;
+    padding-top: 20px;
+    
+}
+
+/* 세 번째 단락의 두 번째 줄의 문장 나눠줌 (마지막 문장 제외) */
+.paragraph3_line2>li:not(.paragraph3_line2_2):after {
+    content: "";
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    width: 1px;
+    height: 11px;
+    margin: 1px 5px 0px 5px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;   
+}
+
+/* 세 번째 단락의 세 번째 줄 */
+.paragraph3_line3 {
+    display: flex;
+    background: rgb(0, 0, 0);
+    color: #616161;
+    font-family: noto sans kr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.8;
+    height: 0px;
+    padding-top: 20px;
+}
+
+/* 푸터 오른쪽 하단의 아이콘 위치 */
+.footer_icons {
+   position: absolute;
+   padding-left: 1200px;
+     
+}
+
+/* 푸터 페이스북 아이콘 */
+.facebook_icon {
+    padding: 5px;
+    display: inline-block;
+    border :1px solid white;
+    border-radius: 50%;
+    margin: 0px 0px 0px 15px;
+}
+
+/* 푸터 트위터 아이콘 */
+.twitter_icon {
+    padding: 5px;
+    display: inline-block;
+    border :1px solid white;
+    border-radius: 50%;
+    margin: 0px 0px 0px 15px;
+}
+
+/* 푸터 인스타 아이콘 */
+.insta_icon {
+    padding: 5px;
+    display: inline-block;
+    border :1px solid white;
+    border-radius: 50%;
+    margin: 0px 0px 0px 15px;
+}
+
+/* 왓챠 팀 아이콘 */
+.team_icon {
+    padding: 5px;
+    display: inline-block;
+    border :1px solid white;
+    border-radius: 50%;
+    margin: 0px 0px 0px 15px;
+}

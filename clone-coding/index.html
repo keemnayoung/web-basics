@@ -17,202 +17,388 @@
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="./js/main.js"></script>
 </head>
- 
+
 <body>
+    <!-- 헤더 -->
     <nav>
        <div class="navbar">
-            <a href="https://watcha.com/home"><img src="./images/logo.png" height="46" alt="로고이미지"></a> 
-             <div class="menu_left">  
+         <!-- 헤더 로고 이미지 -->
+            <a href="https://watcha.com/home"><img src="./images/logo.png" height="46" alt="로고이미지"></a>
+            <!-- 헤더 왼쪽 메뉴 -->
+             <div class="menu_left">
              <li class="home"><a href="">홈</a></li>
              <li class="explore">탐색하기</li>
              <li class="evaluate">평가하기</li>
-            </div>     
+            </div>
+            <!-- 헤더 오른쪽 메뉴 -->
             <div class="menu_right">
-              <div class="search_box">   
+              <div class="search_box">
+                <!-- 검색 아이콘 -->
                <span class="search_button">
-                 <img src="./images/search_button.png" height="14" /></span>     
+                 <img src="./images/search_button.png" height="14" /></span>
                    <li class="search">검색</li>
               </div>
              <li class="want_to_watch">보고싶어요</li>
-            <div class="profile_box"> 
+            <div class="profile_box">
+              <!-- 프로필 이미지 -->
              <img class="profile_image" src="https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_300,w_300/profile2_uxl1zt.jpg" alt="프로필사진">
               <li class="profile">User 1</li>
+              <!-- 아래로 내리는 아이콘 -->
                <span class="down_arrow">
                  <img src="./images/down-arrow.png" height="9"/>
                </span>
               </div>
-           </div> 
-       </div>   
+           </div>
+       </div>
     </nav>
-</body> 
+</body>
 
 
 <!-- MAIN SECTION -->
 <main>
+  <!-- 메인 슬라이드 -->
     <div class="wrapper">
         <div id="slider">
-          <img class="material-icons arrow--left" src="./images/left.png" height="20">      
+          <!-- 슬라이드를 왼쪽으로 넘기는 화살표 아이콘 -->
+          <img class="material-icons arrow--left" src="./images/left.png" height="20">
+          <!-- 첫 번째 슬라이드 -->
             <div class="slide slide1">
                <h1 class="slide_title">4월 2주 신작 </h1>
                  <h2 class="slide_title_down">
                     <p style="height:30px;">타오르는 여인의 초상, 라빠르망,</p>
                     <p>어디갔어 버나뎃 등</p> </h2>
-                     <input type="button" value="목록 보기" class="button_1"/> 
+                    <!-- 목록보기 버튼 -->
+                     <input type="button" value="목록 보기" class="button_1"/>
               </div>
+              <!-- 두 번째 슬라이드 -->
             <div class="slide slide2">
                <h1 class="slide_title"> 왓챠로 파티하자! </h1>
                  <h2 class="slide_title_down">
                     <p style="height:30px;">수다 떨면서 보면 더 재밌다!</p>
                     <p>왓챠파티 감상 TOP 30</p> </h2>
-                     <input type="button" value="목록 보기" class="button_1"/>                 
-            </div> 
-            <div class="slide slide3">
-                <div class="slide__content">
-                    <span>I3</span>
-                </div>
+                    <!-- 목록보기 버튼 -->
+                     <input type="button" value="목록 보기" class="button_1"/>
             </div>
+            <!-- 세 번째 슬라이드 -->
+           <div class="slide slide3">
+             <!-- 세 번째 슬라이드 제목 이미지 추가 -->
+              <h1 class="slide_title3"><img src="./images/slide3_title.png" height="120" alt=""></h1>
+               <h2 class="slide_title_down">
+                 <p style="height:30px;">정체 모를 외계 생명체들의</p>
+                 <p>지구인 몰살 현장, 지금 확인하기</p> </h2>
+                 <!-- 재생,보고싶어요,자세히보기 버튼 -->
+                 <input type="button" value="재생" class="button_2"/>
+                 <input type="button" value="보고싶어요" class="button_3"/>
+                 <input type="button" value="자세히 보기" class="button_4"/>
+            </div>
+            <!-- 네 번째 슬라이드 -->
             <div class="slide slide4">
-                <div class="slide__content">
-                    <span>I4</span>
-                </div>
-            </div>
-            <div class="slide slide5">
-                <div class="slide__content">
-                    <span>I5</span>
-                </div>
-            </div>
-            <div class="slide slide6">
-                <div class="slide__content">
-                    <span>I6</span>
-                </div>
-            </div>
-            <img class="material-icons arrow--right" src="./images/right.png" height="20">
-            <div class="dots">
-                <div class="dot dot1"></div>
-                <div class="dot dot2"></div>
-                <div class="dot dot3"></div>
-                <div class="dot dot4"></div>
-                <div class="dot dot5"></div>
-                <div class="dot dot6"></div>
-            </div>
-        </div>
-    </div>
-
-  <section>
-     <ul>
-       <li class="container_1">
-           <div class="container_title">분위기 있는 홍콩영화</div>
-           <div class="watching_all">모두 보기
-             <img class="watching_all_icon" src="./images/모두보기.png" height="14" alt=""></div>
-           <div class="gradation"></div>
-             <div class="box">
-                <div class="title_text">
-                    <div>중경삼림</div> 
-                    <div>해피투게더</div> 
-                    <div>영웅본색</div> 
-                    <div>친니친니</div> 
-                    <div>패왕별희</div> 
-                    <div>타락천사</div>  
-                 </div>
-                 <a><img src="/images/중경삼림.jpg" height="140" alt=""></a>          
-                 <a><img src="/images/해피투게더.jpg" height="140" alt=""></a>                              
-                 <a><img src="/images/영웅본색.jpg" height="140" alt=""></a>               
-                 <a><img src="/images/친니친니.jpg" height="140" alt=""></a>             
-                 <a><img src="/images/패왕별희.jpg" height="140" alt=""></a>                 
-                 <a><img src="/images/타락천사.jpg" height="140" alt=""></a>         
-             </div>               
-        </li>   
-      <li class="container_2">
-           <div class="container_title_next">성장과 성찰</div>
-           <div class="watching_all_next">모두 보기
-              <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
-              <div class="box">
-                 <div class="title_text_next">
-                     <div>미드 90</div> 
-                     <div class="movie_title_1">미스테리어스 스킨</div> 
-                     <div class="movie_title_2">허공에의 질주</div> 
-                     <div class="movie_title_3">싱스트리트</div> 
-                     <div class="movie_title_4">원더</div> 
-                     <div class="movie_title_5">벌새</div>  
+              <h1 class="slide_title"> 괴물을 알아볼 수 있나요? </h1>
+              <h2 class="slide_title_down">
+                 <p style="height:30px;">심연과 아이컨택하는</p>
+                 <p>진짜 추적 수사물</p> </h2>
+                 <!-- 목록보기 버튼 -->
+                  <input type="button" value="목록 보기" class="button_1"/>
                   </div>
-                  <a><img src="/images/mid90s.jpg" height="140" alt=""></a>          
-                  <a><img src="/images/미스테리어스 스킨.png" height="140" alt=""></a>                              
-                  <a><img src="/images/허공에의 질주.jpg" height="140" alt=""></a>              
-                  <a><img src="/images/싱스트리트.jpg" height="140" alt=""></a>             
-                  <a><img src="/images/원더.jpg" height="140" alt=""></a>                 
-                  <a><img src="/images/벌새.jpg" height="140" alt=""></a>            
-              </div>               
-         </li>   
-         <li class="container_3">    
-             <div class="container_title_next">페미니즘의 시각으로</div>
-             <div class="watching_all_next">모두 보기
-                <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>  
-                <div class="box">
-                   <div class="title_text_next">
-                       <div>톰보이</div> 
-                       <div class="movie_title_6">거꾸로 가는 남자</div> 
-                       <div class="movie_title_7">델마와 루이스</div> 
-                       <div class="movie_title_8">친절한 금자씨</div> 
-                       <div class="movie_title_9">히든피겨스</div> 
-                       <div class="movie_title_10">82년생 김지영</div>  
-                    </div>
-                    <a><img src="/images/톰보이.jpg" height="140" alt=""></a>          
-                    <a><img src="/images/거꾸로 가는 남자.jpg" height="140" alt=""></a>                              
-                    <a><img src="/images/델마와 루이스.jpg" height="140" alt=""></a>              
-                    <a><img src="/images/친금자.jpg" height="140" alt=""></a>             
-                    <a><img src="/images/히든피겨스.jpg" height="140" alt=""></a>                 
-                    <a><img src="/images/김지영.jpg" height="140" alt=""></a>            
-               </div>               
-         </li>   
-         <li class="container_4">    
-          <div class="container_title_next">매력적인 타란티노의 영화</div>
-          <div class="watching_all_next">모두 보기
-             <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>  
+           <!-- 다섯 번째 슬라이드 -->
+          <div class="slide slide5">
+            <!-- 다섯 번째 슬라이드 제목 이미지 -->
+            <h1 class="slide_title5"><img src="./images/Harry-Potter-Logo.png" height="170" alt=""></h1>
+            <h2 class="slide_title_down">
+              <p style="height:30px;">5월 1일 자정,</p>
+              <p>9와 3/4 플랫폼이 열립니다</p> </h2>
+              <!-- 목록보기 버튼 -->
+                <input type="button" value="목록 보기" class="button_1"/>
+          </div>
+          <!-- 여섯 번째 슬라이드 -->
+          <div class="slide slide6">
+            <!-- 여섯 번째 슬라이드 제목 이미지 -->
+            <h1 class="slide_title6"><img src="./images/slide6_logo.png" height="180" alt=""></h1>
+            <h2 class="slide_title_down">
+              <p style="height:30px;">세상이 버린 청춘을</p>
+              <p>담아낸 매력적인 영화!</p> </h2>
+              <!-- 재생,보고싶어요,자세히보기 버튼 -->
+              <input type="button" value="재생" class="button_2"/>
+              <input type="button" value="보고싶어요" class="button_3"/>
+              <input type="button" value="자세히 보기" class="button_4"/>
+          </div>
+          <!-- 슬라이드를 오른쪽으로 넘기는 화살표 아이콘 -->
+          <img class="material-icons arrow--right" src="./images/right.png" height="20">
+           <!-- 메인 오른쪽 아래 슬라이드 동그라미  -->
+          <div class="dots">
+              <div class="dot dot1"></div>
+              <div class="dot dot2"></div>
+              <div class="dot dot3"></div>
+              <div class="dot dot4"></div>
+              <div class="dot dot5"></div>
+              <div class="dot dot6"></div>
+          </div>
+      </div>
+  </div>
+
+  <!-- 메인 슬라이드 아래있는 영화 목록들  -->
+  <section id="sub_main">
+     <div>
+       <!-- 첫 번째 줄에 있는 영화 컨테이너 -->
+       <li class="container_1">
+         <!-- 영화 컨테이너 타이틀 -->
+           <div class="container_title">분위기 있는 홍콩영화</div>
+           <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+           <div class="watching_all">모두 보기
+             <!-- 모두 보기 아이콘 -->
+             <img class="watching_all_icon" src="./images/모두보기.png" height="14" alt=""></div>
+           <!-- 메인 슬라이드와 첫 번째 컨테이너를 자연스럽게 연결하기 위해 그라데이션 생성 -->
+            <div class="gradation"></div>
+            <!-- 영화들을 담은 박스 -->
              <div class="box">
-                <div class="title_text_next">
-                    <div>킬 빌</div> 
-                    <div class="movie_title_11">저수지의 개들</div> 
-                    <div class="movie_title_12">바스터즈: 거친 녀석들</div> 
-                    <div class="movie_title_13">헤이트풀8</div> 
-                    <div class="movie_title_14">펄프픽션</div> 
-                    <div class="movie_title_15">장고</div>  
+               <!--영화 각각의 제목 -->
+                <div class="title_text">
+                    <div>중경삼림</div>
+                    <div>해피투게더</div>
+                    <div>영웅본색</div>
+                    <div>친니친니</div>
+                    <div>패왕별희</div>
+                    <div>타락천사</div>
                  </div>
-                 <a><img src="/images/킬빌.jpg" height="140" alt=""></a>          
-                 <a><img src="/images/저수지의 개들.jpg" height="140" alt=""></a>                              
-                 <a><img src="/images/바스터즈.jpg" height="140" alt=""></a>              
-                 <a><img src="/images/헤이트풀.jpg" height="140" alt=""></a>             
-                 <a><img src="/images/펄프픽션.jpg" height="140" alt=""></a>                 
-                 <a><img src="/images/장고.jpg" height="140" alt=""></a>            
-            </div>               
-
-            <li class="container_5">
-              <div class="container_title_next">90년대를 풍미한 한국 로맨스 영화</div>
-              <div class="watching_all_next">모두 보기
-                 <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>  
-                 <div class="box">
-                    <div class="title_text_next">
-                        <div>접속</div> 
-                        <div class="movie_title_16">8월의 크리스마스</div> 
-                        <div class="movie_title_17">봄날은 간다</div> 
-                        <div class="movie_title_18">클래식</div> 
-                        <div class="movie_title_19">엽기적인 그녀</div> 
-                        <div class="movie_title_20">후아유</div>  
-                     </div>
-                     <a><img src="/images/접속.png" height="140" alt=""></a>          
-                     <a><img src="/images/8월의 크리스마스.jpg" height="140" alt=""></a>                              
-                     <a><img src="/images/봄날은 간다.jpg" height="140" alt=""></a>              
-                     <a><img src="/images/클래식.jpg" height="140" alt=""></a>             
-                     <a><img src="/images/엽기적인그녀.jpeg" height="140" alt=""></a>                 
-                     <a><img src="/images/후아유.jpg" height="140" alt=""></a>            
-                </div>               
-              </li>
-      
-
-          
+                 <!-- 영화 각각의 썸네일 -->
+                 <a><img src="/images/중경삼림.jpg" height="140" alt=""></a>
+                 <a><img src="/images/해피투게더.jpg" height="140" alt=""></a>
+                 <a><img src="/images/영웅본색.jpg" height="140" alt=""></a>
+                 <a><img src="/images/친니친니.jpg" height="140" alt=""></a>
+                 <a><img src="/images/패왕별희.jpg" height="140" alt=""></a>
+                 <a><img src="/images/타락천사.jpg" height="140" alt=""></a>
+             </div>
+        </li>
+        <!-- 두 번째 줄에 있는 영화 컨테이너 -->
+      <li class="container_2">
+        <!-- 영화 컨테이너 타이틀 -->
+           <div class="container_title_next">성장과 성찰</div>
+           <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+           <div class="watching_all_next">모두 보기
+              <!-- 모두 보기 아이콘 -->
+              <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
+              <!-- 영화들을 담은 박스 -->
+              <div class="box">
+                 <!--영화 각각의 제목 -->
+                 <div class="title_text_next">
+                     <div>미드 90</div>
+                     <div class="movie_title_1">미스테리어스 스킨</div>
+                     <div class="movie_title_2">허공에의 질주</div>
+                     <div class="movie_title_3">싱스트리트</div>
+                     <div class="movie_title_4">원더</div>
+                     <div class="movie_title_5">벌새</div>
+                  </div>
+                  <!-- 영화 각각의 썸네일 -->
+                  <a><img src="/images/미드90.jpg" height="140" alt=""></a>
+                  <a><img src="/images/미스테리어스 스킨.png" height="140" alt=""></a>
+                  <a><img src="/images/허공에의 질주.jpg" height="140" alt=""></a>
+                  <a><img src="/images/싱스트리트.jpg" height="140" alt=""></a>
+                  <a><img src="/images/원더.jpg" height="140" alt=""></a>
+                  <a><img src="/images/벌새.jpg" height="140" alt=""></a>
+              </div>
          </li>
-        </ul>
+         <!-- 세 번째 줄에 있는 영화 컨테이너 -->
+         <li class="container_3">
+             <!-- 영화 컨테이너 타이틀 -->
+             <div class="container_title_next">페미니즘의 시각으로</div>
+             <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+             <div class="watching_all_next">모두 보기
+               <!-- 모두 보기 아이콘 -->
+                <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
+                <!-- 영화들을 담은 박스 -->
+                <div class="box">
+                  <!--영화 각각의 제목 -->
+                   <div class="title_text_next">
+                       <div>톰보이</div>
+                       <div class="movie_title_6">거꾸로 가는 남자</div>
+                       <div class="movie_title_7">델마와 루이스</div>
+                       <div class="movie_title_8">친절한 금자씨</div>
+                       <div class="movie_title_9">히든피겨스</div>
+                       <div class="movie_title_10">82년생 김지영</div>
+                    </div>
+                    <!-- 영화 각각의 썸네일 -->
+                    <a><img src="/images/톰보이.jpg" height="140" alt=""></a>
+                    <a><img src="/images/거꾸로 가는 남자.jpg" height="140" alt=""></a>
+                    <a><img src="/images/델마와 루이스.jpg" height="140" alt=""></a>
+                    <a><img src="/images/친금자.jpg" height="140" alt=""></a>
+                    <a><img src="/images/히든피겨스.jpg" height="140" alt=""></a>
+                    <a><img src="/images/김지영.jpg" height="140" alt=""></a>
+               </div>
+            </li>
+          <!-- 네 번째 줄에 있는 영화 컨테이너 -->
+          <li class="container_4">
+            <!-- 영화 컨테이너 타이틀 -->
+          <div class="container_title_next">매력적인 타란티노의 영화</div>
+          <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+           <div class="watching_all_next">모두 보기
+             <!-- 모두 보기 아이콘 -->
+             <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
+             <!-- 영화들을 담은 박스 -->
+             <div class="box">
+               <!--영화 각각의 제목 -->
+                <div class="title_text_next">
+                    <div>킬 빌</div>
+                    <div class="movie_title_11">저수지의 개들</div>
+                    <div class="movie_title_12">바스터즈: 거친 녀석들</div>
+                    <div class="movie_title_13">헤이트풀8</div>
+                    <div class="movie_title_14">펄프픽션</div>
+                    <div class="movie_title_15">장고</div>
+                 </div>
+                 <!-- 영화 각각의 썸네일 -->
+                 <a><img src="/images/킬빌.jpg" height="140" alt=""></a>
+                 <a><img src="/images/저수지의 개들.jpg" height="140" alt=""></a>
+                 <a><img src="/images/바스터즈.jpg" height="140" alt=""></a>
+                 <a><img src="/images/헤이트풀.jpg" height="140" alt=""></a>
+                 <a><img src="/images/펄프픽션.jpg" height="140" alt=""></a>
+                 <a><img src="/images/장고.jpg" height="140" alt=""></a>
+            </div>
+            <!-- 다섯 번째 줄에 있는 영화 컨테이너 -->
+            <li class="container_5">
+              <!-- 영화 컨테이너 타이틀 -->
+              <div class="container_title_next">90년대를 풍미한 한국 로맨스 영화</div>
+              <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+              <div class="watching_all_next">모두 보기
+                <!-- 모두 보기 아이콘 -->
+                 <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
+                 <!-- 영화들을 담은 박스 -->
+                 <div class="box">
+                    <!--영화 각각의 제목 -->
+                    <div class="title_text_next">
+                        <div>접속</div>
+                        <div class="movie_title_16">8월의 크리스마스</div>
+                        <div class="movie_title_17">봄날은 간다</div>
+                        <div class="movie_title_18">클래식</div>
+                        <div class="movie_title_19">엽기적인 그녀</div>
+                        <div class="movie_title_20">후아유</div>
+                     </div>
+                     <!-- 영화 각각의 썸네일 -->
+                     <a><img src="/images/접속.png" height="140" alt=""></a>
+                     <a><img src="/images/8월의 크리스마스.jpg" height="140" alt=""></a>
+                     <a><img src="/images/봄날은 간다.jpg" height="140" alt=""></a>
+                     <a><img src="/images/클래식.jpg" height="140" alt=""></a>
+                     <a><img src="/images/엽기적인그녀.jpeg" height="140" alt=""></a>
+                     <a><img src="/images/후아유.jpg" height="140" alt=""></a>
+                </div>
+              </li>
+            <!-- 여섯 번째 줄에 있는 영화 컨테이너 -->
+            <li class="container_6">
+              <!-- 영화 컨테이너 타이틀 -->
+              <div class="container_title_next">기이한 에너지로 가득 차있는 작품들</div>
+              <!-- 컨테이너 오른쪽에 있는 모두 보기 -->
+              <div class="watching_all_next">모두 보기
+                 <!-- 모두 보기 아이콘 -->
+                 <img class="watching_all_icon_next" src="./images/모두보기.png" height="14" alt=""></div>
+                 <!-- 영화들을 담은 박스 -->
+                 <div class="box">
+                    <!--영화 각각의 제목 -->
+                    <div class="title_text_next">
+                        <div>블랙스완</div>
+                        <div class="movie_title_21">존 말코비치 되기</div>
+                        <div class="movie_title_22">레퀴엠</div>
+                        <div class="movie_title_23">미드소마</div>
+                        <div class="movie_title_24">시계태엽오렌지</div>
+                        <div class="movie_title_25">케빈에 대하여</div>
+                     </div>
+                     <!-- 영화 각각의 썸네일 -->
+                     <a><img src="/images/블랙스완.jpg" height="140" alt=""></a>
+                     <a><img src="/images/말코비치.jpg" height="140" alt=""></a>
+                     <a><img src="/images/레퀴엠.jpg" height="140" alt=""></a>
+                     <a><img src="/images/미드소마.jpeg" height="140" alt=""></a>
+                     <a><img src="/images/시태오.jpg" height="140" alt=""></a>
+                     <a><img src="/images/케빈에 대하여.jpg" height="140" alt=""></a>
+                </div>
+              </li>
+          </li>
+      </div>
   </section>
-
 </main>
+
+<!-- 푸터 -->
+<footer>
+  <!-- 세 단락 중 첫 번째 단락 -->
+  <ul class="paragraph1">
+    <!-- 첫 번째 단락의 첫 번째 문장 -->
+    <li class="paragraph1_line1">
+      왓챠피디아 서비스 이용약관
+    </li>
+    <!-- 첫 번째 단락의 두 번째 문장 -->
+    <li class="paragraph1_line2">
+      개인정보 처리 방침
+    </li>
+    <!-- 첫 번째 단락의 세 번째 문장 -->
+    <li class="paragraph1_line3">
+      왓챠 서비스 이용약관
+    </li>
+    <!-- 첫 번째 단락의 네 번째 문장 -->
+    <li class="paragraph1_line4">
+      고객센터
+    </li>
+    <!-- 첫 번째 단락의 다섯 번째 문장 -->
+    <li class="paragraph1_line5">
+      채용정보
+    </li>
+  </ul>
+
+  <!-- 세 단락 중 두 번째 단락 -->
+<ul class="paragraph2">
+  <!-- 두 번째 단락 중 첫 번째 줄 -->
+  <li class="paragraph2_line1">
+    <!-- 두 번째 단락 중 첫 번째 줄의 첫 번째 문장 -->
+    <span class="paragraph2_line1_1">고객센터(이용 및 결제 문의)</span>
+    <!-- 두 번째 단락 중 첫 번째 줄의 두 번째 문장 -->
+    <span class="paragraph2_line1_2">cs@watcha.co.kr /02-515-9985 (유료)</span>
+  </li>
+  <!-- 두 번째 단락 중 두 번째 줄-->
+  <li class="paragraph2_line2">
+    <!-- 두 번째 단락 중 두 번째 줄의 첫 번째 문장 -->
+    <span class="paragraph2_line2_1">제휴 및 대외 협력</span>
+    <!-- 두 번째 단락 중 두 번째 줄의 두 번째 문장 -->
+    <span class="paragraph2_line2_2">contact@watcha.com /070-7554-9696 (유료)</span>
+  </li>
+  <!-- 두 번째 단락 중 세 번째 줄 -->
+  <li class="paragraph2_line3">
+    <!-- 두 번째 단락 중 세 번째 줄의 첫 번째 문장 -->
+    <span class="paragraph2_line3_1">B2B 이용권 구매 문의</span>
+    <!-- 두 번째 단락 중 세번째 줄의 두 번째 문장 -->
+    <span class="paragraph2_line3_2">쿠프마케팅 (m_oper@coopnc.com /070-4020-5289)</span>
+  </li>
+</ul>
+
+<div>
+  <!-- 세 번째 단락의 첫 번째 줄 -->
+  <ul class="paragraph3_line1">
+    <!-- 세 번째 단락 중 첫 번째 줄의 첫 번째 문장 -->
+    <li class="paragraph3_line1_1">주식회사 왓챠</li>
+    <!-- 세 번째 단락 중 첫 번째 줄의 두 번째 문장 -->
+    <li class="paragraph3_line1_2">대표 박태훈</li>
+    <!-- 세 번째 단락 중 첫 번째 줄의 세 번째 문장 -->
+    <li class="paragraph3_line1_3">서울특별시 서초구 강남대로 343 신덕빌딩 3층</li>
+  </ul>
+  <!-- 세 번째 단락 중 두 번째 줄 -->
+  <ul class="paragraph3_line2">
+    <!-- 세 번째 단락 중 두 번째 줄의 첫 번째 문장 -->
+    <li class="paragraph3_line2_1">사업자등록번호 211-88-66013</li>
+    <!-- 세 번째 단락 중 두 번째 줄의 두 번째 문장 -->
+    <li class="paragraph3_line2_2">통신판매업 신고번호 제 2019-서울서초-0965호</li>
+  </ul>
+  </div>
+   <!-- 푸터 오른쪽 하단의 아이콘 4개 -->
+  <div class="footer_icons">
+    <a href="https://www.facebook.com/watchaKR"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5JY29uc19Gb290ZXJfRmFjZWJvb2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iSWNvbnNfRm9vdGVyX0ZhY2Vib29rIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBpZD0iQm91bmQiIHg9IjAiIHk9IjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCI+PC9yZWN0PgogICAgICAgIDxwYXRoIGQ9Ik0zMi41MDQyMjMyLDEyLjQzODMxOTYgTDI4LjMyMzI5NDEsMTIuNDM4MzE5NiBDMjcuNTAzMTExOCwxMi40MzgzMTk0IDI1LjY2MjcwMjgsMTIuNTk3MzU1IDI1LjY2MjcwMjgsMTUuNzc4MDYxOCBMMjUuNjYyNzAyOCwxOS44NjA5NjkxIEwzMi41MDQyMjMyLDE5Ljg2MDk2OTEgTDMxLjM2Mzk2OTgsMjYuMTcwMzcxMiBMMjUuNjYyNzAyOCwyNi4xNzAzNzEyIEwyNS42NjI3MDI4LDQyLjUgTDE5LjIwMTI2Nyw0Mi41IEwxOS4yMDEyNjcsMjYuMTcwMzcxMiBMMTMuNSwyNi4xNzAzNzEyIEwxMy41LDE5Ljg2MDk2OTEgTDE5LjIwMTI2NywxOS44NjA5NjkxIEwxOS4yMDEyNjcsMTQuMjkzNzMxOSBDMTkuMjAxMjY3LDE0LjI5MzczMTkgMTguOTg0MjE4Nyw2LjUgMjcuMTgzMDQwNyw2LjUgTDMyLjUwNDIyMzIsNi41IEwzMi41MDQyMjMyLDEyLjQzODMxOTYgWiIgaWQ9ImljX2ZiIiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+" width="25" class="facebook_icon"></a>
+    <a href="https://twitter.com/watcha_kr"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5JY29uc19Gb290ZXJfVHdpdHRlcjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uc19Gb290ZXJfVHdpdHRlciIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgaWQ9IkJvdW5kIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjwvcmVjdD4KICAgICAgICA8cGF0aCBkPSJNNDIuNDM5LDEyLjU1MyBDNDEuMTE1LDEzLjE1NSAzOS42OTEsMTMuNTYzIDM4LjE5NywxMy43NDUgQzM5LjcyMiwxMi44MDggNDAuODkzLDExLjMyNCA0MS40NDQsOS41NTYgQzQwLjAxNywxMC40MjQgMzguNDM3LDExLjA1NCAzNi43NTQsMTEuMzk0IEMzNS40MDcsOS45MjIgMzMuNDg4LDkuMDAyIDMxLjM2Myw5LjAwMiBDMjcuMjg0LDkuMDAyIDIzLjk3NywxMi4zOTMgMjMuOTc3LDE2LjU3NSBDMjMuOTc3LDE3LjE2OCAyNC4wNDMsMTcuNzQ2IDI0LjE2OSwxOC4zIEMxOC4wMywxNy45ODQgMTIuNTg4LDE0Ljk3IDguOTQ1LDEwLjM4OCBDOC4zMSwxMS41MDcgNy45NDUsMTIuODA3IDcuOTQ1LDE0LjE5NSBDNy45NDUsMTYuODIyIDkuMjQ5LDE5LjE0IDExLjIzMSwyMC40OTggQzEwLjAyLDIwLjQ1OSA4Ljg4MSwyMC4xMTggNy44ODYsMTkuNTUxIEM3Ljg4NSwxOS41ODMgNy44ODUsMTkuNjE0IDcuODg1LDE5LjY0NiBDNy44ODUsMjMuMzE1IDEwLjQzMSwyNi4zNzUgMTMuODEsMjcuMDcxIEMxMy4xOSwyNy4yNDQgMTIuNTM3LDI3LjMzNyAxMS44NjQsMjcuMzM3IEMxMS4zODgsMjcuMzM3IDEwLjkyNSwyNy4yODkgMTAuNDc0LDI3LjIwMSBDMTEuNDE0LDMwLjIwOSAxNC4xNDIsMzIuMzk5IDE3LjM3NCwzMi40NiBDMTQuODQ2LDM0LjQ5MSAxMS42NjEsMzUuNzAxIDguMjAxLDM1LjcwMSBDNy42MDUsMzUuNzAxIDcuMDE3LDM1LjY2NSA2LjQzOSwzNS41OTUgQzkuNzA4LDM3Ljc0NCAxMy41OSwzOC45OTggMTcuNzYxLDM4Ljk5OCBDMzEuMzQ2LDM4Ljk5OCAzOC43NzUsMjcuNDU5IDM4Ljc3NSwxNy40NTMgQzM4Ljc3NSwxNy4xMjQgMzguNzY4LDE2Ljc5OCAzOC43NTQsMTYuNDczIEM0MC4xOTcsMTUuNDA1IDQxLjQ0OSwxNC4wNzIgNDIuNDM5LDEyLjU1MyBMNDIuNDM5LDEyLjU1MyBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg=="  width="25" class="twitter_icon"></a>
+    <a href="https://www.instagram.com/watcha_kr/"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5JY29uc19Gb290ZXJfSW5zdGFncmFtPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb25zX0Zvb3Rlcl9JbnN0YWdyYW0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxyZWN0IGlkPSJCb3VuZCIgeD0iMCIgeT0iMCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48L3JlY3Q+CiAgICAgICAgPHBhdGggZD0iTTM2LjE5MDIyMjIsNDAgTDExLjgwOTc3NzgsNDAgQzkuNzA1Nzc3NzgsNDAgOCwzOC4yOTQyMjIyIDgsMzYuMTkwMjIyMiBMOCwxMS44MDk3Nzc4IEM4LDkuNzA1Nzc3NzggOS43MDU3Nzc3OCw4IDExLjgwOTc3NzgsOCBMMzYuMTkwMjIyMiw4IEMzOC4yOTQyMjIyLDggNDAsOS43MDU3Nzc3OCA0MCwxMS44MDk3Nzc4IEw0MCwzNi4xOTAyMjIyIEM0MCwzOC4yOTQyMjIyIDM4LjI5NDIyMjIsNDAgMzYuMTkwMjIyMiw0MCBMMzYuMTkwMjIyMiw0MCBaIE0yNCwxNy43OTI4ODg5IEMyMC41NzYsMTcuNzkyODg4OSAxNy44MDA4ODg5LDIwLjU2OCAxNy44MDA4ODg5LDIzLjk5MiBDMTcuODAwODg4OSwyNy40MTYgMjAuNTc2LDMwLjE5MTExMTEgMjQsMzAuMTkxMTExMSBDMjcuNDI0LDMwLjE5MTExMTEgMzAuMTk5MTExMSwyNy40MTYgMzAuMTk5MTExMSwyMy45OTIgQzMwLjE5OTExMTEsMjAuNTY4IDI3LjQyNCwxNy43OTI4ODg5IDI0LDE3Ljc5Mjg4ODkgTDI0LDE3Ljc5Mjg4ODkgWiBNMzYuNDE5NTU1NiwxMy4xNjcxMTExIEMzNi40MTk1NTU2LDEyLjMyNTMzMzMgMzUuNjc0NjY2NywxMS41ODA0NDQ0IDM0LjgzMjg4ODksMTEuNTgwNDQ0NCBMMzEuODQwODg4OSwxMS41ODA0NDQ0IEMzMSwxMS41ODA0NDQ0IDMwLjIyNCwxMi4zMjUzMzMzIDMwLjIyNCwxMy4xNjcxMTExIEwzMC4yMjQsMTYuMTU5MTExMSBDMzAuMjI0LDE3IDMxLDE3Ljc3NiAzMS44NDA4ODg5LDE3Ljc3NiBMMzQuODMyODg4OSwxNy43NzYgQzM1LjY3NDY2NjcsMTcuNzc2IDM2LjQxOTU1NTYsMTcgMzYuNDE5NTU1NiwxNi4xNTkxMTExIEwzNi40MTk1NTU2LDEzLjE2NzExMTEgTDM2LjQxOTU1NTYsMTMuMTY3MTExMSBaIE0zNi40MTk1NTU2LDIxLjcyMDg4ODkgTDMzLjYxNjg4ODksMjEuNzIwODg4OSBDMzMuNzk4MjIyMiwyMi40NzExMTExIDMzLjkwNDg4ODksMjMuMTg2NjY2NyAzMy45MDQ4ODg5LDIzLjk5MiBDMzMuOTA0ODg4OSwyOS40NjIyMjIyIDI5LjQ3MDIyMjIsMzMuODk2ODg4OSAyNCwzMy44OTY4ODg5IEMxOC41Mjk3Nzc4LDMzLjg5Njg4ODkgMTQuMDk1MTExMSwyOS40NjIyMjIyIDE0LjA5NTExMTEsMjMuOTkyIEMxNC4wOTUxMTExLDIzLjE4NjY2NjcgMTQuMjAxNzc3OCwyMi40NzExMTExIDE0LjM4MzExMTEsMjEuNzIwODg4OSBMMTEuNTgwNDQ0NCwyMS43MjA4ODg5IEwxMS41ODA0NDQ0LDM0LjgzMjg4ODkgQzExLjU4MDQ0NDQsMzUuNjc0NjY2NyAxMi4zMjUzMzMzLDM2LjQxOTU1NTYgMTMuMTY2MjIyMiwzNi40MTk1NTU2IEwzNC44MzI4ODg5LDM2LjQxOTU1NTYgQzM1LjY3NDY2NjcsMzYuNDE5NTU1NiAzNi40MTk1NTU2LDM1LjY3NDY2NjcgMzYuNDE5NTU1NiwzNC44MzI4ODg5IEwzNi40MTk1NTU2LDIxLjcyMDg4ODkgTDM2LjQxOTU1NTYsMjEuNzIwODg4OSBaIiBpZD0iU2hhcGUiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4="  width="25"  class="insta_icon"></a>
+    <a href="https://team.watcha.com/"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU2LjMgKDgxNzE2KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5JY29uc19Gb290ZXJfQmxvZzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uc19Gb290ZXJfQmxvZyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgaWQ9IkJvdW5kIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjwvcmVjdD4KICAgICAgICA8cGF0aCBkPSJNMjQsNiBDMTQuMDU5LDYgNiwxNC4wNiA2LDI0IEM2LDMzLjk0MSAxNC4wNTksNDIgMjQsNDIgQzMzLjk0LDQyIDQyLDMzLjk0MSA0MiwyNCBDNDIsMTQuMDYgMzMuOTQsNiAyNCw2IFogTTI3LjUxMiwyMSBDMjcuNTEyLDE5LjkzNCAyNi43MzEsMTkgMjUuNDgzLDE5IEwyMSwxOSBMMjEsMjMgTDI1LjQ4MiwyMyBDMjYuNzMsMjMgMjcuNTEyLDIyLjExOCAyNy41MTIsMjEgWiBNMjUuNjM5LDI2IEwyMSwyNiBMMjEsMzAgTDI1LjYzOSwzMCBDMjcuMDE4LDMwIDI3Ljg1LDI5LjI0OCAyNy44NSwyOCBDMjcuODUsMjYuOTA4IDI3LjA2OCwyNiAyNS42MzksMjYgWiBNMjYuNTc0LDMzIEwxNywzMyBMMTcsMTYgTDI2LjI4OSwxNiBDMjkuNTkyLDE2IDMxLjI4MSwxNy45NjIgMzEuMjgxLDIwLjI3NiBDMzEuMjgxLDIyLjQzNCAyOS45MjksMjMuODQ0IDI4LjI5MSwyNC4xODIgQzMwLjE2MiwyNC40NjkgMzEuNjE5LDI2LjE5OCAzMS42MTksMjguMzU2IEMzMS42MTksMzAuOTgzIDI5LjkwMiwzMyAyNi41NzQsMzMgTDI2LjU3NCwzMyBMMjYuNTc0LDMzIFoiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==" width="25" class="team_icon"></a>
+  </div>
+  <!-- 세 번째 단락 중 세 번째 줄 -->
+ <div class="paragraph3_line3">
+   <a href="https://team.watcha.com">
+  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCA0MiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi43NTQ2IDIuNjE2NjRWNC4zMDYzSDE4LjQzODFWMTEuOTI4N0gyMC41MzU5VjQuMzA2M0gyMi4xMjMxVjIuNjE2NjRIMTYuNzU0NlpNMzIuOTM1OCA2LjIxNDQ0SDMxLjMzMDNWMi42MjkwOUgyOS4yMzg5VjExLjk0MTFIMzEuMzMwM1Y3LjkwNDA0SDMyLjkzNThWMTEuOTQxMUgzNS4wMjcyVjIuNjI5MDlIMzIuOTM1OFY2LjIxNDQ0Wk0yNS42NTExIDIuNTE2NDNIMjUuMjg2N0MyMy4zOTc4IDIuNTE2NDMgMjIuNjQyMyAzLjQ4MDE3IDIyLjY0MjMgNS4wNDQ3OVY5LjQ4NzkyQzIyLjY0MjMgMTEuMDUyNiAyMy4zOTc4IDEyLjA1MzggMjUuMzI3MyAxMi4wNTM4SDI1LjY5MTVDMjcuNjA3NCAxMi4wNTM4IDI4LjI4MiAxMC45MDIzIDI4LjI4MiA5LjYwMDdWOC4wMTExOEgyNi4yMzEyVjkuNDg3OTJDMjYuMjMxMiAxMC4wMzg4IDI2LjA0MjMgMTAuMzc2NyAyNS41MDI2IDEwLjM3NjdDMjQuOTc2NCAxMC4zNzY3IDI0LjgwMTEgMTAuMDYzOCAyNC44MDExIDkuNDc1NTNWNS4wMzIyMUMyNC44MDExIDQuNDQzOTEgMjQuOTc2NCA0LjE0MzYzIDI1LjUwMjYgNC4xNDM2M0MyNi4wNTU3IDQuMTQzNjMgMjYuMjMxMiA0LjQ2ODk1IDI2LjIzMTIgNS4wMzIyMVY2LjEwODZIMjguMjgyVjQuOTE5NTZDMjguMjgyIDMuMzY3NjUgMjcuNTUzNSAyLjUxNjQzIDI1LjY1MTEgMi41MTY0M1pNMTQuNzEyNSA4Ljc0OTkyTDE0LjEwNDMgNC44NTcyOUgxMy43NDQ2TDEzLjEzNjMgOC43NDk5MkgxNC43MTI1Wk0xNS40NzUyIDIuNjE2NjRMMTcuMTIxNCAxMS45Mjg3SDE1LjIwOTJMMTQuOTc2NSAxMC40Mzk3SDEyLjg3MjNMMTIuNjM5NiAxMS45Mjg3SDEwLjcyNzRMMTIuMzczNyAyLjYxNjY0SDE1LjQ3NTJaTTM5LjU5MSA4Ljc0OTkzTDM4Ljk4MjggNC44NTcyOUgzOC42MjMyTDM4LjAxNDggOC43NDk5M0gzOS41OTFaTTQwLjM1MzggMi42MTY2NEw0MiAxMS45Mjg3SDQwLjA4NzhMMzkuODU1MiAxMC40Mzk3SDM3Ljc1MDhMMzcuNTE4MiAxMS45Mjg3SDM1LjYwNkwzNy4yNTIyIDIuNjE2NjRINDAuMzUzOFoiIGZpbGw9IiM1QTVBNUEiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjAwMjk0IDBMOC4zNzkyOSA4LjkxODdMOC4yMTE3IDguOTI3MjlMNi43Mjg0NiAyLjYxNzVINC44OTU2OUwzLjc4NjExIDkuMTU1NDhMMy41NDgyOSA5LjE2NzY5TDIuNTU0ODQgMi42MTc1SDBMMi4zMjQzNSAxMi4zNjg2TDQuOTIyNjEgMTIuMTk5OUw1Ljc2Nzk0IDYuMTQ3MjlMNi4wMTU4NyA2LjEzNDA0TDcuMTQ3ODMgMTIuMDUzNkw5LjYzNDYzIDExLjg5MTFMMTEuNjA5NSAwSDkuMDAyOTRaIiBmaWxsPSIjNUE1QTVBIi8+Cjwvc3ZnPgo=" width="42" alt=""></a>
+   Copyright©
+   2021
+   by
+   Watch, Inc.
+   All rights reserved.
+ </div>
+</footer>
 
 </html>

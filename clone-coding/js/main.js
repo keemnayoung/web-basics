@@ -1,10 +1,15 @@
+// 스크롤시 헤더 색 변경
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
+    // 첫 화면에서 한 번이라도 스크롤이 내려가면, 
     if (scroll > 1) {
+      //헤더 색깔 검정
       $(".navbar").css("background" , "#000000");
     }
+    // 스크롤 변화가 없다면,
     else{
+      //헤더색 투명
       $(".navbar").css("background" , "#ffffff00");   
     }
   })
@@ -25,6 +30,8 @@ const dot1 = document.querySelector('.dot1')
 const dot2 = document.querySelector('.dot2')
 const dot3 = document.querySelector('.dot3')
 const dot4 = document.querySelector('.dot4')
+const dot5 = document.querySelector('.dot5')
+const dot6 = document.querySelector('.dot6')
 
 // 슬라이드 이미지 리셋
 const reset = () => {
@@ -146,14 +153,3 @@ dot6.addEventListener("click", function(){
   dots[current].style.background = '#ffffff'
 })
 
-// 슬라이드
-
-$("#right").click(function() {
-  var currentLeft = parseInt($('.items').css('left'));
-  $('.items').css('left', (currentLeft - 800) + 'px');
-})
-
-$('#left').click(function() {
-  var currentLeft = parseInt($('.items').css('left'));
-  $('.items').css('left', (currentLeft + 800) + 'px');
-})
