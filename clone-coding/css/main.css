@@ -119,7 +119,7 @@ main .wrapper #slider {
     overflow: hidden;
 }
 
-/* 첫 번째 슬라이드 */
+/* 1번째 슬라이드 */
 main .wrapper #slider .slide1 {
     width: 100%;
     height: 100vh;
@@ -166,7 +166,7 @@ main .wrapper #slider .slide1 {
     
 
 
-    /* 첫 번째,두 번째,네 번째,다섯 번째 슬라이드의 '목록보기' 버튼 */
+    /* 1번째,2번째,4번째,5번째 슬라이드의 '목록보기' 버튼 */
 input.button_1{
         background-image: url(/images/list.png);
         background-repeat: no-repeat;
@@ -204,7 +204,7 @@ input.button_1:hover{
         color: black;
   }
 
-/* 두 번째 슬라이드 */
+/* 2번째 슬라이드 */
 main .wrapper #slider .slide2 {
     width: 100%;
     height: 100vh;
@@ -218,7 +218,7 @@ main .wrapper #slider .slide2 {
     background-size: cover;    
 }
 
-/* 세 번째 슬라이드 */
+/* 3번째 슬라이드 */
 main .wrapper #slider .slide3 {
     width: 100%;
     height: 100vh;
@@ -232,12 +232,12 @@ main .wrapper #slider .slide3 {
     background-size: cover;   
 }
 
-/* 세 번째 슬라이드 제목 이미지 위치 조절 */
+/* 3번째 슬라이드 제목 이미지 위치 조절 */
 .slide_title3 {
     padding: 210px 0px 0px 50px;
 }
 
-/* 세 번째,여섯 번째 슬라이드의 '재생' 버튼 속성 */
+/* 3번째, 6번째 슬라이드의 '재생' 버튼 속성 */
 input.button_2{
     background-image: url(/images/play_w.png);
     background-repeat: no-repeat;
@@ -276,7 +276,7 @@ input.button_2:hover{
 
 }
  
-/* 세 번째,여섯 번째 슬라이드의 '보고싶어요' 버튼 속성 */
+/* 3번째,6번째 슬라이드의 '보고싶어요' 버튼 속성 */
 input.button_3{
     background-image: url(/images/plus_w.png);
     background-repeat: no-repeat;
@@ -315,7 +315,7 @@ input.button_3:hover{
 
 }
 
-/* 세 번째,여섯 번째 슬라이드의 '자세히 보기' 버튼 속성 */
+/* 3번째,6번째 슬라이드의 '자세히 보기' 버튼 속성 */
 input.button_4{
     background-image: url(/images/info_w.png);
     background-repeat: no-repeat;
@@ -354,7 +354,7 @@ input.button_4:hover{
 
 }
 
-/* 네 번째 슬라이드 */
+/* 4번째 슬라이드 */
 main .wrapper #slider .slide4 {
     width: 100%;
     height: 100vh;
@@ -369,7 +369,7 @@ main .wrapper #slider .slide4 {
     }
     
 
-/* 네 번째 슬라이드 */
+/* 4번째 슬라이드 */
 main .wrapper #slider .slide5 {
     width: 100%;
     height: 100vh;
@@ -384,12 +384,12 @@ main .wrapper #slider .slide5 {
     
 }
 
-/* 다섯 번째 슬라이드 제목 위치 */
+/* 5번째 슬라이드 제목 위치 */
 .slide_title5 {
     padding: 180px 0px 0px 50px;
 }
 
-/* 여섯 번째 슬라이드 */
+/* 6번째 슬라이드 */
 main .wrapper #slider .slide6 {
     width: 100%;
     height: 100vh;
@@ -403,7 +403,7 @@ main .wrapper #slider .slide6 {
      background-size: cover; 
 }
 
-/* 여섯 번째 슬라이드 제목 위치 */
+/* 6번째 슬라이드 제목 위치 */
 .slide_title6 {
     padding: 140px 0px 0px 50px;
 }
@@ -473,7 +473,7 @@ main .wrapper #slider .dots .dot1 {
 }
 
 /* section */
-/* 첫 번째 컨테이너 대표 제목 속성 */
+/* 1번째 컨테이너 대표 제목 속성 */
 .container_title {
     position: relative;
     bottom: 120px;
@@ -486,7 +486,7 @@ main .wrapper #slider .dots .dot1 {
     color: white;
 }
 
-/* 첫 번째 컨테이너의 '모두보기' 속성  */
+/* 1번째 컨테이너의 '모두보기' 속성  */
 .watching_all {
     position: relative;
     bottom: 165px;
@@ -499,7 +499,7 @@ main .wrapper #slider .dots .dot1 {
     cursor: pointer;
 }
 
-/* 첫 번째 컨테이너의 '모두보기'호버시 색상 변경 */
+/* 1번째 컨테이너의 '모두보기'호버시 색상 변경 */
 .watching_all:hover {
     color: white;
     opacity: 1;
@@ -533,7 +533,7 @@ main .wrapper #slider .dots .dot1 {
 
   }
   
-  /* 첫 번째 컨테이너에 담긴 영화 제목 */
+  /*1번째 컨테이너에 담긴 영화 제목 */
   .title_text {
     position: absolute;
     display: flex;
@@ -543,7 +543,7 @@ main .wrapper #slider .dots .dot1 {
     padding-left: 40px;
 }
 
-/* 첫 번째 컨테이너에 담긴 영화 제목들 간격 조절 */
+/* 1번째 컨테이너에 담긴 영화 제목들 간격 조절 */
 .title_text>div {
 position: relative;
 top: 150px;
@@ -551,7 +551,7 @@ padding-right: 196px;
 flex-shrink: 0;
 }
 
-/* 두 번째~여섯 번째 컨테이너의 대표 제목 속성 */
+/* 2번째~6번째 컨테이너의 대표 제목 속성 */
 .container_title_next {
     position: relative;
     bottom: 320px;
@@ -564,7 +564,7 @@ flex-shrink: 0;
     color: white;
 }
 
-/* 두 번째~여섯 번째 컨테이너의 '모두보기' 속성 */
+/* 2번째~6번째 컨테이너의 '모두보기' 속성 */
 .watching_all_next {
     position: relative;
     bottom: 365px;
@@ -577,13 +577,13 @@ flex-shrink: 0;
     cursor: pointer;
 }
 
-/* 두 번째~여섯 번째 컨테이너의 '모두보기' 호버시 */
+/* 2번째~6번째 컨테이너의 '모두보기' 호버시 */
 .watching_all_next:hover {
     color: white;
     opacity: 1;
 }
 
-/* 두 번째~여섯 번째 컨테이너의 영화 제목 속성 */
+/* 2번째~6번째 컨테이너의 영화 제목 속성 */
 .title_text_next{
     position: absolute;
     display: flex;
@@ -593,7 +593,7 @@ flex-shrink: 0;
     padding-left: 40px;
 }
 
-/* 두 번째~여섯 번째 컨테이너에 담긴 영화 제목들 간격 조절 */
+/* 2번째~6번째 컨테이너에 담긴 영화 제목들 간격 조절 */
 .title_text_next>div {
     position: relative;
     display: inline-block;
@@ -714,7 +714,7 @@ footer {
     
 }
 
-/*  세 단락 중 첫 번째 단락  */
+/*  세 단락 중 1번째 단락  */
 .paragraph1 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -726,7 +726,7 @@ footer {
     height: 0px;
 }
 
-/* 첫 번째 단락에서 각각 문장 나눠줌. (마지막 문장 제외) */
+/* 1번째 단락에서 각각 문장 나눠줌. (마지막 문장 제외) */
 .paragraph1>li:not(.paragraph1_line5):after {
     content: "";
     display: inline-block;
@@ -739,13 +739,13 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 첫 번째 단락의 두번째 문장 폰트 진하게 */
+/* 1번째 단락의 2번째 문장 폰트 진하게 */
 .paragraph1_line2 {
     font-weight: 800;
     color: white;
 }
 
-/* 두 번째 단락의 첫 번째 줄 */
+/* 2번째 단락의  1번째 줄 */
 .paragraph2_line1 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -758,7 +758,7 @@ footer {
     padding-top: 45px;
 }
 
-/* 두 번째 단락의 두 번째 줄 */
+/* 2번째 단락의 2번째 줄 */
 .paragraph2_line2 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -771,7 +771,7 @@ footer {
     padding: 20px 0px;
 }
 
-/* 두 번째 단락의 세 번째 줄 */
+/* 2번째 단락의 3번째 줄 */
 .paragraph2_line3 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -784,7 +784,7 @@ footer {
     
 }
 
-/* 두 번째 단락의 첫 번째 줄의 문장 나눠줌 */
+/* 2번째 단락의 1번째 줄의 문장 나눠줌 */
 .paragraph2_line1_1:after {
     content: "";
     display: inline-block;
@@ -797,7 +797,7 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 두 번째 단락의 두 번째 줄의 문장 나눠줌 */
+/* 2번째 단락의 2번째 줄의 문장 나눠줌 */
 .paragraph2_line2_1:after {
     content: "";
     display: inline-block;
@@ -810,7 +810,7 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 두 번째 단락의 세 번째 줄의 문장 나눠줌 */
+/* 2번째 단락의  3번째 줄의 문장 나눠줌 */
 .paragraph2_line3_1:after {
     content: "";
     display: inline-block;
@@ -823,7 +823,7 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 세 번째 단락의 첫 번째 줄 */
+/* 3번째 단락의 1번째 줄 */
 .paragraph3_line1 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -837,7 +837,7 @@ footer {
     
 }
 
-/* 세 번째 단락의 첫 번째 줄의 문장들 나눠줌. (마지막 문장 제외) */
+/* 3번째 단락의 1번째 줄의 문장들 나눠줌. (마지막 문장 제외) */
 .paragraph3_line1>li:not(.paragraph3_line1_3):after {
     content: "";
     display: inline-block;
@@ -850,7 +850,7 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 세 번째 단락의 두 번째 줄 */
+/* 3번째 단락의 2번째 줄 */
 .paragraph3_line2 {
     display: flex;
     background: rgb(0, 0, 0);
@@ -864,7 +864,7 @@ footer {
     
 }
 
-/* 세 번째 단락의 두 번째 줄의 문장 나눠줌 (마지막 문장 제외) */
+/* 3번째 단락의 2번째 줄의 문장 나눠줌 (마지막 문장 제외) */
 .paragraph3_line2>li:not(.paragraph3_line2_2):after {
     content: "";
     display: inline-block;
@@ -877,7 +877,7 @@ footer {
     -webkit-font-smoothing: antialiased;   
 }
 
-/* 세 번째 단락의 세 번째 줄 */
+/* 3번째 단락의 3번째 줄 */
 .paragraph3_line3 {
     display: flex;
     background: rgb(0, 0, 0);
