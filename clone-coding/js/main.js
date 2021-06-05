@@ -153,3 +153,56 @@ dot6.addEventListener("click", function(){
   dots[current].style.background = '#ffffff'
 })
 
+
+
+
+
+window.onload = function () {
+  const mediaEl = document.getElementById("demo");
+
+  window.addEventListener("resize", function () {
+    window.innerWidth >= 960
+      ? (mediaEl.innerHTML = "데스크탑")
+      : window.innerWidth >= 768
+      ? (mediaEl.innerHTML = "태블릿PC")
+      : (mediaEl.innerHTML = "스마트폰");
+  });
+};
+
+const $scrollToTop = document.querySelector(".scrollToTop");
+
+$scrollToTop.addEventListener("click", function () {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+})
+
+
+// 윈도우에 스크롤 이벤트가 발생하면,
+// 스크롤 위치에 따라 scrollToTop 요소의 투명도 변경
+window.addEventListener("scroll", function () {
+  // 현재 스크롤 위치를 콘솔창에 출력해보세요
+  //   console.log(window.scrollY);
+
+  // 만약 스크롤 위치가 1400 이상이라면,
+  window.scrollY >= 1400
+    ? ($scrollToTop.style.opacity = 1) // scrollToTop 버튼이 보이게 합니다
+    : ($scrollToTop.style.opacity = 0); // 아니라면 안보이게 합니다
+});
+
+
+var myImage = document.getElementById("mainImage");
+	var imageArray = [ "../images/bg_img.jpg",
+			"../images/mudo.jpg", "../images/slide3.jpg", "../images/slide4.jpg", "../images/slide5.jpg","../images/slide6 (2).jpg" ];
+	var imageIndex = 0;
+
+	function changeImage() {
+		myImage.setAttribute("src", imageArray[imageIndex]);
+		imageIndex++;
+		if (imageIndex >= imageArray.length) {
+			imageIndex = 0;
+		}
+	}
+	setInterval(changeImage, 3000);

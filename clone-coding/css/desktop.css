@@ -1,7 +1,9 @@
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    height: 1000px;
+    height: 100%;
     padding: 0;
     background-color: rgb(0, 0, 0);
 
@@ -103,6 +105,8 @@ main {
     height: 100vh;
     position: relative;
     flex-direction: row;
+    flex: 1;
+    
 }
 
 /* MAIN SLIDER */
@@ -131,7 +135,8 @@ main .wrapper #slider .slide1 {
     rgba(20, 20, 20, 0.75) 100%
     ), url("../images/bg_img.jpg");
         background-size: cover;
-      }
+}
+      
 
       /* 슬라이드 전체적인 텍스트 위치 */
     main .wrapper #slider .slide_ {
@@ -706,11 +711,10 @@ flex-shrink: 0;
 /* footer  */
 
 footer {
-    position: absolute;
-    width: 100%; 
-    margin-bottom: 0;
-    bottom: -1750px;
+    width: 100%;
+    margin: 0;
     padding-left: 40px;
+    
     
 }
 
@@ -931,4 +935,66 @@ footer {
     border :1px solid white;
     border-radius: 50%;
     margin: 0px 0px 0px 15px;
+}
+
+/* 실제 콘텐츠 영역을 잡아주는 inner입니다 */
+
+.inner {
+    /* 너비 값을 주고 margin의 좌우값을 auto로 설정하여 본 요소를 가운데 정렬합니다 */
+    width: 1400px;
+    margin: 0 auto;
+    /* scrollToTop 요소가 잘 작동하는지 확인하고자 */
+    /* 페이지를 길게 만들기 위해 inner에 높이를 지정했습니다 */
+    /* inner의 하위 요소에 margin값을 설정하는 경우 잘 적용되도록 */
+    /* display 속성은 flex로 설정합니다 */
+    display: flex;
+    z-index: 1;
+}
+
+/* 버튼 */
+
+/* 페이지 내 모든 버튼 요소는 기본적으로 클래스 속성에 btn을 갖도록 합니다 */
+
+.btn {
+    cursor: pointer;
+}
+
+/* 둥둥 뜨는 애니메이션 */
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* 페이지 내에 scrollToTop 기능을 갖는 모든 요소는 둥둥이로 만듭니다 */
+
+.scrollToTop {
+    animation: float 6s ease infinite;
+    width: 100px;
+    /* 블록 속성을 가진 요소로 만듭니다 */
+    display: inline-block;
+    /* margin-top을 auto로 설정하면 페이지 맨 아래에 찰싹 붙는 요소를 쉽게 만들 수 있습니다 */
+    /* 단 부모 요소에 display: flex가 있어야 합니다 */
+    margin-top: auto;
+    /* 부모 요소의 영역 내에서 본 요소가 가장 우측에 위치하도록 합니다 */
+    margin-left: auto;
+    padding-bottom: 100px;
+    position: fixed;
+    /* 뷰포트 안에서 가장 아래에 위치하게 합니다 */
+    bottom: 0;
+    /* 콘텐츠가 보이는 영역(.inner)을 60vw로 잡았으므로 */
+    /* scrollToTop 버튼이 뷰포트 맨 오른쪽에 위치하도록 하려면 */
+    /* 화면을 기준으로 오른쪽은 (100vw - 60vw) / 2 = 20vw만큼 떨어져 있어야 합니다   */
+    right: 5vw;
+    /* 기본적으로 안보이게 합니다 */
+    opacity: 0;
+    /* 스크롤 위치에 따라 opacity값이 바뀔 때 자연스럽게 변하도록 합니다 */
+    transition: .4s;
 }
