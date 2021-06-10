@@ -1,3 +1,4 @@
+
 // 스크롤시 헤더 색 변경
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -15,6 +16,8 @@ $(document).ready(function(){
   })
 })
 
+
+
 // 슬라이드 이미지 선택자
 const sliderImages = document.querySelectorAll('.slide')
 // 오른쪽 화살표 선택자
@@ -23,6 +26,8 @@ const arrowRight = document.querySelector('.arrow--right')
 const arrowLeft = document.querySelector('.arrow--left')
 // 현재 보여지는 슬라이드 번호
 let current = 0;
+
+
 
 // 동그라미들 선택자
 const dots = document.querySelectorAll('.dot')
@@ -153,21 +158,25 @@ dot6.addEventListener("click", function(){
   dots[current].style.background = '#ffffff'
 })
 
+var slideIndex = 0;
+showSlides();
 
-
-
-
-window.onload = function () {
-  const mediaEl = document.getElementById("demo");
-
-  window.addEventListener("resize", function () {
-    window.innerWidth >= 960
-      ? (mediaEl.innerHTML = "데스크탑")
-      : window.innerWidth >= 768
-      ? (mediaEl.innerHTML = "태블릿PC")
-      : (mediaEl.innerHTML = "스마트폰");
-  });
-};
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+  }
 
 const $scrollToTop = document.querySelector(".scrollToTop");
 
@@ -178,7 +187,6 @@ $scrollToTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 })
-
 
 // 윈도우에 스크롤 이벤트가 발생하면,
 // 스크롤 위치에 따라 scrollToTop 요소의 투명도 변경
@@ -192,17 +200,3 @@ window.addEventListener("scroll", function () {
     : ($scrollToTop.style.opacity = 0); // 아니라면 안보이게 합니다
 });
 
-
-var myImage = document.getElementById("mainImage");
-	var imageArray = [ "../images/bg_img.jpg",
-			"../images/mudo.jpg", "../images/slide3.jpg", "../images/slide4.jpg", "../images/slide5.jpg","../images/slide6 (2).jpg" ];
-	var imageIndex = 0;
-
-	function changeImage() {
-		myImage.setAttribute("src", imageArray[imageIndex]);
-		imageIndex++;
-		if (imageIndex >= imageArray.length) {
-			imageIndex = 0;
-		}
-	}
-	setInterval(changeImage, 3000);

@@ -470,18 +470,44 @@ main .wrapper #slider .dots .dot {
     margin: 0 6px;
     cursor: pointer;
     
+    
 }
 
 /* 슬라이드 첫 번째 동그라미 색상 */
 main .wrapper #slider .dots .dot1 {
     background: #ffffff;
+    
 }
+
+.active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
 
 /* section */
 /* 1번째 컨테이너 대표 제목 속성 */
 .container_title {
     position: relative;
-    bottom: 120px;
+    bottom: 80px;
     height: 50px;
     padding-left: 43px;
     background: rgba(255, 255, 255, 0);
@@ -489,12 +515,13 @@ main .wrapper #slider .dots .dot1 {
     font-size: 23px;
     font-weight: bold;
     color: white;
+    z-index: 5;
 }
 
 /* 1번째 컨테이너의 '모두보기' 속성  */
 .watching_all {
     position: relative;
-    bottom: 165px;
+    bottom: 120px;
     padding-left: 1390px;
     font-family: noto sans kr;
     font-weight: bold;
@@ -502,6 +529,7 @@ main .wrapper #slider .dots .dot1 {
     color: #ffffff;
     opacity: 0.7;
     cursor: pointer;
+    z-index: 5;
 }
 
 /* 1번째 컨테이너의 '모두보기'호버시 색상 변경 */
@@ -513,7 +541,7 @@ main .wrapper #slider .dots .dot1 {
 /* 메인 슬라이드와 첫 번째 컨테이너의 자연스러운 연결을 위한 그라데이션 */
 .gradation {
     position: relative;
-    bottom: 165px;
+    bottom: 180px;
     background: linear-gradient(to top, #00000000, #000000 50%, transparent);
     height: 200px;
 }
@@ -521,7 +549,7 @@ main .wrapper #slider .dots .dot1 {
 /* 영화들을 담은 박스의 위치 */
 .box {
     position: relative;
-    bottom: 350px;
+    bottom: 300px;
     padding-left: 40px;
     display: grid;
     grid-column-gap: 40px;
@@ -559,7 +587,7 @@ flex-shrink: 0;
 /* 2번째~6번째 컨테이너의 대표 제목 속성 */
 .container_title_next {
     position: relative;
-    bottom: 320px;
+    bottom: 275px;
     height: 50px;
     padding-left: 43px;
     padding-top: 50px;
@@ -572,7 +600,7 @@ flex-shrink: 0;
 /* 2번째~6번째 컨테이너의 '모두보기' 속성 */
 .watching_all_next {
     position: relative;
-    bottom: 365px;
+    bottom: 320px;
     padding-left: 1390px;
     font-family: noto sans kr;
     font-weight: bold;
@@ -707,15 +735,133 @@ flex-shrink: 0;
     padding-left: 160px;
 }
 
+.movie_title_26 {
+    padding-left: 215px;
+}
 
+.movie_title_27 {
+    padding-left: 140px;
+}
+
+.movie_title_28 {
+    padding-left: 210px;
+}
+
+.movie_title_29 {
+    padding-left: 200px;
+}
+
+.movie_title_30 {
+    padding-left: 190px;
+}
+
+.movie_title_31 {
+    padding-left: 185px;
+}
+
+.movie_title_32 {
+    padding-left: 130px;
+}
+
+.movie_title_33 {
+    padding-left: 190px;
+}
+
+.movie_title_34 {
+    padding-left: 160px;
+}
+
+.movie_title_35 {
+    padding-left: 130px;
+}
+
+.movie_title_36 {
+    padding-left: 230px;
+}
+
+.movie_title_37 {
+    padding-left: 135px;
+}
+
+.movie_title_38 {
+    padding-left: 200px;
+}
+
+.movie_title_39 {
+    padding-left: 135px;
+}
+
+.movie_title_40 {
+    padding-left: 30px;
+}
+
+.movie_title_41 {
+    padding-left: 215px;
+}
+
+.movie_title_42 {
+    padding-left: 30px;
+}
+
+.movie_title_43 {
+    padding-left: 215px;
+}
+
+.movie_title_44 {
+    padding-left: 200px;
+}
+
+.movie_title_45 {
+    padding-left: 140px;
+}
+
+.movie_title_46 {
+    padding-left: 230px;
+}
+
+.movie_title_47 {
+    padding-left: 240px;
+}
+
+.movie_title_48 {
+    padding-left: 170px;
+}
+
+.movie_title_49 {
+    padding-left: 225px;
+}
+
+.movie_title_50 {
+    padding-left: 185px;
+}
+
+.movie_title_51 {
+    padding-left: 215px;
+}
+
+.movie_title_52 {
+    padding-left: 200px;
+}
+
+.movie_title_53 {
+    padding-left: 150px;
+}
+
+.movie_title_54 {
+    padding-left: 195px;
+}
+
+.movie_title_55 {
+    padding-left: 150px;
+}
 /* footer  */
 
 footer {
     width: 100%;
-    margin: 0;
+    margin: 0px;
     padding-left: 40px;
     
-    
+
 }
 
 /*  세 단락 중 1번째 단락  */
