@@ -161,6 +161,7 @@ dot6.addEventListener("click", function(){
 var slideIndex = 0;
 showSlides();
 
+//자동 슬라이드 
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("slide");
@@ -175,9 +176,10 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2500); // Change image every 2 seconds
+    setTimeout(showSlides, 2500); // 2.5초마다 슬라이드가 변경
   }
 
+  
 const $scrollToTop = document.querySelector(".scrollToTop");
 
 $scrollToTop.addEventListener("click", function () {

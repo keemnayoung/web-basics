@@ -31,7 +31,7 @@ body {
     align-items: center;
     list-style-type: none;
     padding-left: 36px;
-    padding-right: 820px;
+    padding-right: 840px;
     cursor: pointer;
     flex-shrink: 0;
     
@@ -51,9 +51,16 @@ body {
 .menu_left li {
     padding: 0 14px;
 }
+.menu_left li:hover {
+    color: #e0e0e0bb;
+}
 /* 오른쪽 메뉴 간격 조절 */
 .menu_right li {
-    padding: 0 3px;
+    padding: 0 5px;
+}
+
+.menu_right li:hover {
+    color: #e0e0e0bb;
 }
 
 /* 왼쪽 메뉴의 '홈'메뉴 폰트 속성 */
@@ -63,6 +70,7 @@ a {
     color:#eeeeee;
 }
 
+  
 /* 검색 메뉴 */
 .search_box{
     display: flex;
@@ -479,11 +487,12 @@ main .wrapper #slider .dots .dot1 {
     
 }
 
+/* 자동 슬라이드 */
 .active {
     background-color: #717171;
   }
   
-  /* Fading animation */
+  
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -565,7 +574,7 @@ main .wrapper #slider .dots .dot1 {
 
 
   }
-  
+
   /*1번째 컨테이너에 담긴 영화 제목 */
   .title_text {
     position: absolute;
